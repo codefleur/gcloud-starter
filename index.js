@@ -34,7 +34,7 @@ app.use(function(req, res, next) {
 });
 app.use('/',express.static('www'))
 app.use('/config.js', (req,res) => res.send( CONFIG_JS ) )
-app.use('/vm/start', (req,res) => {  } )
+app.use('/vm/start', (req,res) => { startInstance(); res.json({}); } )
 
 const server = http.createServer( app )
 server.listen( PORT, () => console.log(`Serving on ${server.address().port}`) )

@@ -1,6 +1,6 @@
 <style>
-html, body, iframe { margin:0; padding:0; border:none; }
-iframe { width: 100%; height:100%; }
+    html, body, iframe { margin:0; padding:0; border:none; }
+    iframe { width: 100%; height:100%; }
 </style>
 <iframe id="loader"></iframe>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -11,4 +11,5 @@ iframe { width: 100%; height:100%; }
     ping()
     setInterval( ping, 2000 )
     $("#loader").attr("src",`/spinners/${SPINNER}.html`)
+    $.ajax({ url: "/vm/start", error: console.error, success: console.log, timeout: 1000 })
 </script>
