@@ -1,0 +1,11 @@
+version: "2"
+services:
+  codestarter:
+    image: choephixpi/codestarter
+    container_name: code-starter
+    hostname: codestarter
+    restart: always
+    environment:
+      - PING_URL=http://gccxpi.duckdns.org/api/config
+      - COMPUTE_ZONE=europe-west3-c
+      - COMPUTE_INSTANCE=beast
