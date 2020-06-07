@@ -12,4 +12,4 @@ You can host this app somewhere always live and use it to raise your sleeping cl
 
 You can even host this app on a separate, always live, cheapest possible gcloud compute instance (this is a simple app, it will run on a piece of gum, if you can connect a network cable to it) and use it to raise a second, more powerful vm, then automatically shut it down after you're done using it.
 
-For automatically shutting down a Compute instance after X amount of idle time, you can check out [this repo.](https://github.com/codefleur/gcloud-stopper)
+For automatically shutting down a Compute instance after X amount of idle time, you can check out [this repo](https://github.com/codefleur/gcloud-stopper).
